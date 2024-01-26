@@ -1,4 +1,7 @@
-.PHONY: test build deploy
+.PHONY: setup analyze test run
+
+install:
+	poetry install
 
 analyze:
 	poetry run ruff check .

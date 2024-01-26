@@ -4,7 +4,7 @@ FROM python:3.11
 # Install Poetry
 RUN pip install poetry
 
-# Install project dependencies using Poetry
+# [Optional] Install project dependencies using Poetry
 COPY pyproject.toml .
 RUN poetry install
 RUN rm pyproject.toml
