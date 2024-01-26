@@ -6,10 +6,10 @@ install:
 analyze:
 	poetry run ruff check .
 	poetry run ruff format .
-	poetry run mypy scripts lib test
+	poetry run mypy .
 
 test:
-	poetry run pytest test
+	poetry run pytest .
 
 run:
-	poetry run python scripts/main.py
+	poetry run python apps/main.py
