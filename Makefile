@@ -1,9 +1,12 @@
 .PHONY: test build deploy
 
 analyze:
-	mypy scripts lib test
+	poetry run ruff check .
+	poetry run ruff format .
+	poetry run mypy scripts lib test
 
 test:
-    pytest test
+	poetry run pytest test
 
-
+run:
+	poetry run python scripts/main.py

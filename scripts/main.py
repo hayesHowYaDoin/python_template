@@ -4,7 +4,8 @@ main.py
 Defines an entrypoint for the example project.
 """
 
-from ..lib.test import add
+from python_template.example import add
+
 
 def main() -> None:
     """Prints the sum of two numbers."""
