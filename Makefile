@@ -12,4 +12,4 @@ test:
 	poetry run pytest .
 
 run:
-	poetry run python apps/main.py
+	poetry run python -m apps.main
